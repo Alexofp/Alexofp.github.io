@@ -5,6 +5,7 @@ var challenges = {
         "No flashlights"
     ],
     "Candles and Glowsticks": [
+		"No flashlights, only candles and glowsticks",
         "Can still use all normal electronics except flashlights (including UV flashlight)"
     ],
     "Stubborn Cunts ”Anti vax life hax”": [
@@ -25,22 +26,17 @@ var challenges = {
     ],
     "Paul Blart": [
         "No strong flashlights",
-        "If more than 2 people are playing",
         "Only 2 equipment per person (including flashlight)"
     ],
-    "Paul Blart 2 Fat 2 Furious II": [
-        "No strong flashlights",
-        "Only 2 equipment per person (including flashlight)"
-    ],
-    "Paul Blart 3 Peas in a Pod": [
+    "Paul Blart (Hard)": [
         "No strong flashlights",
         "Only 1 equipment per person (including flashlight)"
     ],
     "Schools Out, Ghosts In ": [
-        "Highschool on the highest difficulty that is given to you first"
+        "Highschool on the highest difficulty"
     ],
     "“With the Frizz, no way!!”": [
-        "Highschool on the highest difficulty that is given to you first II",
+        "Highschool on the highest difficulty",
         "Must stop hunt twice"
     ],
     "“Come at me ya pussy bitch!”": [
@@ -60,7 +56,7 @@ var challenges = {
     ],
     "Sacrifice! Sacrifice! Sacrifice!": [
         "Play the game normally until a hunt is happening",
-        "When a hunt is happening one person must sacrifice themself to the ghost to keep the rest of the team alive"
+        "When a hunt is happening one person must sacrifice themselves to the ghost to keep the rest of the team alive"
     ],
     "The Offering": [
         "Once the room has been found only one person can stay inside the house and collect evidence",
@@ -94,7 +90,7 @@ var challenges = {
     ],
     "Apartment Block": [
         "You all live in a complex and have your own rooms.",
-        "You may bring whatever you want but it is not to be shared, you aren't frindly neighbors.",
+        "You may bring whatever you want but it is not to be shared, you aren't friendly neighbors.",
         "Without the use of a thermometer everyone picks their own rooms to investigate and is not allowed to stray from them.",
         "Best on small maps."
     ],
@@ -206,7 +202,7 @@ var challenges = {
         "No additional default items may be brought along.",
         "After this, the saboteur becomes a team player again but will only help if given a found item by another player."
     ],
-    "Thick As Theives": [
+    "Thick As Thieves": [
         "All players enter the site with a flashlight only (any kind).",
         "They may not begin searching for the ghost until every collectable electronic device is stolen.",
         "Stolen devices must be placed in the van.",
@@ -218,11 +214,11 @@ var challenges = {
         "They may also hold doors shut against players in a hunt phase.",
         "If a player says “Door Daddy, Door Daddy, leave me be!” the Door Daddy must open the door."
     ],
-    "Emp!": [
+    "EMP!": [
         "What happened to the power, did a nuke go off in the upper atmosphere?",
         "Power is off in the house and use of any electronic devices apart from normal flashlights and a single EMF reader is prohibited."
     ],
-    "Bffl": [
+    "BFFL": [
         "You buddy up with one other player, making two teams of two.",
         "You may only communicate to this one other player, and must avoid the other two.",
         "If your buddy dies, you can no longer assist in the investigation and must weep at their corpse.",
