@@ -260,11 +260,46 @@ var challenges = {
     ]
 }
 
-function new_challenge() {
-    var num_challenges = Object.keys(challenges).length
-    var random = Math.floor(Math.random() * num_challenges);
+var challenges_queue = shuffle(Object.keys(challenges));
 
-    return Object.keys(challenges)[random];
+// https://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array
+/**
+ * Shuffles array in place.
+ * @param {Array} a items An array containing the items.
+ */
+function shuffle(a) {
+    var j, x, i;
+    for (i = a.length - 1; i > 0; i--) {
+        j = Math.floor(Math.random() * (i + 1));
+        x = a[i];
+        a[i] = a[j];
+        a[j] = x;
+    }
+    return a;
+}
+
+// Will make sure there are no repeats
+function pick_weighted(a, chance_multiplier) {
+	var len = a.length;
+	var chance = 1.0 / len * chance_multiplier;
+	
+	var i;
+	for (i = 0; i < len; i++) {
+		var item = a[i];
+		
+		if(Math.random() < chance) {
+			a.splice(i, 1);
+			a.push(item);
+			return item;
+		}
+	}
+	
+	var random = Math.floor(Math.random() * len);
+	return a[random];
+}
+
+function new_challenge() {
+    return pick_weighted(challenges_queue, 10);
 }
 
 function present_challenge(chal) {
